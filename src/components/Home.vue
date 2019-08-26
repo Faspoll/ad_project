@@ -1,5 +1,6 @@
 <template>
 	<div class="">
+		hi
 		<v-container fluid>
 			<v-layout row>
 				<v-flex xs12>
