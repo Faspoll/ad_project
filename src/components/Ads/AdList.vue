@@ -48,14 +48,14 @@
     			description: 'some description',
     			promo: false,
     			imageSrc: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
-    			id: '1'
+    			id: '2'
       	},
       	{
     			title: 'First ad',
     			description: 'some description',
     			promo: false,
     			imageSrc: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
-    			id: '1'
+    			id: '3'
       	},
     	]
 		}
