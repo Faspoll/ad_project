@@ -62,8 +62,8 @@
 		return {
 			title: '',
 			description: '',
-			valid: false,
-			promo: false
+			promo: false,
+			valid: false
 		}
 	},
 	methods: {
@@ -72,9 +72,11 @@
 				const ad = {
 					title: this.title,
 					description: this.description,
-					promo: this.promo
+					promo: this.promo,
+					imageSrc: 'http://mgnews.ru/image/normal/65554/the-witcher-3-wild-hunt-1427359379296851.jpeg'
 				}
-				console.log(ad);
+
+				this.$store.dispatch('createAd', ad)	
 			}
 		}
 	}

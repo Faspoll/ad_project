@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
 
 import MyHome from '@/components/Home.vue'
 import Ad from '@/components/Ads/Ad.vue'
@@ -23,6 +22,7 @@ export default new Router({
     {
       path: '/ad:id',
       name: 'ad',
+      props: true,
       component: Ad
     },
     {

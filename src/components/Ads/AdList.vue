@@ -4,7 +4,7 @@
 			<v-flex xs12 sm6 offset-sm3>
 				<h1 class="text--secondary mb-3">My ads</h1>
 
-				<v-card v-for="ad in ads" :key="ad.id" evelation-10 class="mb-3">
+				<v-card v-for="ad in myAds" :key="ad.id" evelation-10 class="mb-3">
 					<v-layout>
 						<v-flex sm4>
 							<v-img
@@ -33,31 +33,9 @@
 
 <script>
 	export default {
-	data() {
-		return {
-			ads: [
-    		{
-    			title: 'First ad',
-    			description: 'some description',
-    			promo: false,
-    			imageSrc: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
-    			id: '1'
-      	},
-      	{
-    			title: 'First ad',
-    			description: 'some description',
-    			promo: false,
-    			imageSrc: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
-    			id: '2'
-      	},
-      	{
-    			title: 'First ad',
-    			description: 'some description',
-    			promo: false,
-    			imageSrc: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
-    			id: '3'
-      	},
-    	]
+	computed : {
+		myAds() {
+			return this.$store.getters.myAds
 		}
 	}
 }
